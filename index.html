@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Home page</title>
+</head>
+	<body>
+		<div class="wrapper">
+			<svg style="display: none;">
+    <symbol id="logo" viewBox="0 0 48 48">
+        <g clip-path="url(#clip0_2001_270)">
+            <path d="M7.0827 29.0642C6.52441 30.1961 7.16155 31.5534 8.38852 31.8466C9.32688 32.0704 10.2936 31.5849 10.6595 30.6926C12.6135 25.9413 16.8338 22.6498 21.6723 21.7355C15.6904 20.6367 9.73219 23.6855 7.0827 29.0642Z" fill="#2DA7DF"/>
+            <path d="M12.0712 39.5268C12.3393 40.8542 13.7681 41.5903 15.003 41.037C15.9461 40.6145 16.4507 39.5678 16.1779 38.5699C14.7254 33.2543 16.159 27.6959 19.6695 23.7533C13.8675 26.7343 10.8016 33.2228 12.0712 39.5268Z" fill="#2DA7DF"/>
+            <path d="M7.26573 17.8969C6.10026 18.3967 5.69811 19.8485 6.44407 20.8748C7.01339 21.6582 8.07004 21.9184 8.9327 21.4785C13.5299 19.1265 18.903 19.3725 23.1942 21.8332C19.3462 17.0882 12.806 15.5229 7.26573 17.8985V17.8969Z" fill="#2DA7DF"/>
+            <path d="M41.3701 30.256C40.8228 29.2329 39.6116 28.7521 38.5156 29.1351C32.6772 31.1766 26.3421 30.0101 21.6519 26.3922C25.4447 32.649 32.9501 35.57 39.9081 33.6531C41.3732 33.2496 42.0861 31.5928 41.3685 30.2544L41.3701 30.256Z" fill="#2DA7DF"/>
+            <path d="M22.6154 43.5104C23.6264 44.4105 25.2113 44.1425 25.8674 42.9587C26.3673 42.0538 26.1418 40.9156 25.3249 40.2803C20.9706 36.9005 18.7768 31.5959 19.2168 26.3354C16.3671 32.2013 17.8132 39.2305 22.6154 43.5088V43.5104Z" fill="#2DA7DF"/>
+            <path d="M16.1824 11.0427C15.0469 10.6376 13.8294 11.3895 13.6843 12.586C13.5739 13.5003 14.1417 14.3642 15.028 14.6133C19.7514 15.9454 23.3345 19.5884 24.7334 24.0749C25.1213 18.2832 21.576 12.9675 16.1824 11.0443V11.0427Z" fill="#2DA7DF"/>
+            <path d="M34.7557 38.242C34.7557 37.1732 33.9782 36.2573 32.9232 36.095C27.293 35.2232 22.6501 31.5297 20.4075 26.5577C20.7749 33.2858 25.6087 38.9136 32.0952 40.3718C33.461 40.6792 34.7589 39.6419 34.7557 38.2436V38.242Z" fill="#2DA7DF"/>
+            <path d="M34.5964 2.46235C25.544 -1.99258 14.2678 -0.401984 6.80667 7.23728C-2.35932 16.6216 -2.25208 31.7394 7.04007 40.9992C16.419 50.3441 31.5999 50.3347 40.9678 40.9708C48.9289 33.0131 50.1291 20.859 44.5714 11.6339C44.092 10.8378 42.9029 10.934 42.5638 11.7978C42.5606 11.8073 42.5575 11.8152 42.5543 11.8246C42.4266 12.1525 42.455 12.5182 42.6363 12.8193C43.4123 14.1073 44.0604 15.4835 44.5604 16.929C44.4074 16.8092 44.2387 16.702 44.0541 16.6137C42.8603 16.0415 41.4204 16.4135 40.6697 17.5044C36.6687 23.3182 30.0465 26.512 23.2856 26.3402C30.9991 29.5482 39.8812 27.182 44.9988 20.7297C45.8599 19.6452 45.7385 18.1476 44.8569 17.2049C44.8569 17.2049 47.7477 19.601 45.729 22.9919C45.7432 23.2662 45.7527 23.5421 45.7558 23.8195C45.9025 35.8964 36.2271 45.8056 24.1451 45.9522C12.0631 46.0989 2.14955 36.4276 2.00288 24.3508C1.85937 12.2739 11.5348 2.36461 23.6168 2.218C27.2015 2.17386 30.5938 2.99517 33.5981 4.48803C34.3283 4.8506 35.191 4.35088 35.2335 3.53746C35.2572 3.08503 35.0049 2.66413 34.598 2.46392L34.5964 2.46235Z" fill="#2DA7DF"/>
+            <path d="M35.0427 8.13111V8.14056C34.3771 15.1398 30.5811 21.3981 24.9131 25.2714C33.0603 23.3576 39.1809 16.888 40.881 8.9934C41.1097 7.9309 40.7154 6.83057 39.8764 6.1401C39.8559 6.12276 39.8354 6.10542 39.8133 6.08966C37.9981 4.59995 35.2477 5.75388 35.0474 8.0917C35.0474 8.10588 35.0458 8.11849 35.0442 8.13111H35.0427Z" fill="#2DA7DF"/>
+            </g>
+    </symbol>
+</svg>
+<header class="header">
+    <div class="header__container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a href="index.html">
+                    <svg class="icon" width="48px" height="48px"><use xlink:href="#logo"></use></svg>
+                    <span>Aerocoolsystems</span>
+                </a>
+                </div>
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                    <li class="menu__item"><a href="aboutus.html" class="menu__link">About us</a></li>
+                    <li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
+                    <li class="menu__item"><a href="products.html" class="menu__link">Products</a></li>
+                    <li class="menu__item"><a href="faq.html" class="menu__link">FAQs</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Contact Us</a></li>
+                </ul>
+            </nav>
+            <ul class="menu__buttons">
+                <li class="button button_small menu__button">Sign Up</li>
+                <li class="button button_small button_blue menu__button">request service</li>
+            </ul>
+            <button class="burger">
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
+			<section class="intro">
+				<div class="intro__container">
+					<div class="intro__inner">
+						<h1 class="main_heading">Your Comfort <br>is <span>Our Priority</span></h1>
+						<p class="intro__paragraph">Expert Solutions for All Your Cooling Needs</p>
+						<button class="button button_medium button_blue intro__btn">Request a Quote</button>
+					</div>
+				</div>
+			</section>
+			<section class="aerosky">
+				<div class="aerosky__container">
+					<div class="aerosky__inner">
+						<div class="aerosky__text">
+							<h2 class="aerosky__title">
+								Leading the Skies with Aero Cool Systems
+							</h2>
+							<p class="aerosky__paragraph">
+								For over two decades, Aero Cool Systems has been pioneering advanced cooling solutions for the aerospace industry. Our commitment to innovation, quality, and reliability has established us as a leader in our field. With a focus on sustainability and cutting-edge technology, we deliver unparalleled expertise and service.
+							</p>
+							<button class="button button_large">Learn More</button>
+						</div>
+						<div class="aerosky__img">
+							<img src="img/aerosky.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<div class="services__container">
+					<div class="services__inner">
+						<h3 class="section-title">Services</h3>
+						<ul class="services__list">
+							<li class="services__item">
+								<div class="services__img">
+									<img src="img/services/1.jpg" alt="">
+								</div>
+								<div class="services__text">
+									<h4 class="services__name">Installation</h4>
+									<p class="services__explain">Expert installation of cutting-edge cooling systems for optimal aerospace performance.</p>
+									<button class="button button_small services__button">View</button>
+								</div>
+							</li>
+							<li class="services__item">
+								<div class="services__img">
+									<img src="img/services/2.jpg" alt="">
+								</div>
+								<div class="services__text">
+									<h4 class="services__name">Replacement</h4>
+									<p class="services__explain">Efficiency-focused upgrades with the latest in cooling technology tailored to your needs.</p>
+									<button class="button button_small services__button">View</button>
+								</div>
+							</li>
+							<li class="services__item">
+								<div class="services__img">
+									<img src="img/services/3.jpg" alt="">
+								</div>
+								<div class="services__text">
+									<h4 class="services__name">Repair</h4>
+									<p class="services__explain">Quick and effective solutions to keep your systems running smoothly with minimal downtime.</p>
+									<button class="button button_small services__button">View</button>
+								</div>
+							</li>
+							<li class="services__item">
+								<div class="services__img">
+									<img src="img/services/4.jpg" alt="">
+								</div>
+								<div class="services__text">
+									<h4 class="services__name">Maintenance</h4>
+									<p class="services__explain">Regular, thorough checks to ensure your cooling systems maintain peak efficiency and longevity.</p>
+									<button class="button button_small services__button">View</button>
+								</div>
+							</li>
+						</ul>
+						<button class="button button_large">View More Services</button>
+					</div>
+				</div>
+			</section>
+			<section class="products">
+				<div class="products__container">
+					<div class="products__inner">
+						<h3 class="section-title">Products</h3>
+						<ul class="products__list">
+							<li class="products__item">
+								<div class="products__img">
+									<img src="img/products/1.jpg" alt="">
+								</div>
+								<div class="products__text">
+									<h4 class="products__name">Carrier</h4>
+									<p class="products__explain">Innovative and efficient HVAC solutions.</p>
+								</div>
+							</li>
+							<li class="products__item">
+								<div class="products__img">
+									<img src="img/products/2.jpg" alt="">
+								</div>
+								<div class="products__text">
+									<h4 class="products__name">Lennox</h4>
+									<p class="products__explain">Eco-friendly, high-efficiency heating and cooling.</p>
+								</div>
+							</li>
+							<li class="products__item">
+								<div class="products__img">
+									<img src="img/products/3.jpg" alt="">
+								</div>
+								<div class="products__text">
+									<h4 class="products__name">Trane</h4>
+									<p class="products__explain">Reliable, high-performance HVAC systems.</p>
+								</div>
+							</li>
+							<li class="products__item">
+								<div class="products__img">
+									<img src="img/products/4.jpg" alt="">
+								</div>
+								<div class="products__text">
+									<h4 class="products__name">Amana</h4>
+									<p class="products__explain">Affordable, durable heating and cooling.</p>
+								</div>
+							</li>
+						</ul>
+						<button class="button button_large button_blue">Discover More Products</button>
+					</div>
+				</div>
+			</section>
+			<section class="mission">
+				<div class="mission__container">
+					<div class="mission__inner">
+						<h3 class="section-title">mission and values</h3>
+						<ul class="mission__list">
+							<li class="mission__item">
+								<div class="mission__img">
+									<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M42.2885 40.4062C42.2885 41.3798 42.2885 40.7884 42.2885 41.7548C42.2885 46.6658 32.8846 47.7908 24.0505 47.7908C15.238 47.7908 5.70435 46.6731 5.70435 41.7548C5.70435 40.7884 5.70435 41.3798 5.70435 40.4062C5.70435 36.8005 12.2092 33.1442 17.7476 31.1394C18.1515 30.9952 20.0625 29.9495 18.9952 27.1442C16.5144 24.6058 14.8269 22.1538 14.8269 16.6154H33.2308C33.2308 22.0961 31.5 24.5769 29.0337 27.1154H29.0481C28.0024 30.2957 29.6755 31.0529 29.9423 31.1394C35.7548 33.0649 42.2885 36.6851 42.2885 40.4062ZM34.4928 10.7812C34.4928 6.82931 31.7885 3.37498 27.7789 2.15623C27.1587 1.96152 25.8462 9.2596 25.8462 9.2596V1.24037C25.8462 0.612961 25.3558 0.108154 24.7933 0.108154H23.2068C22.6442 0.108154 22.1539 0.612961 22.1539 1.24037V9.2596C22.1539 9.2596 20.8342 1.96873 20.2068 2.16344C16.2043 3.38219 13.5072 6.83652 13.5072 10.7812C13.5072 11.7908 11.0769 10.363 11.0769 14.7692H36.9231C36.9231 10.3197 34.4928 11.7908 34.4928 10.7812Z" fill="#2DA7DF"/>
+										</svg>
+										
+								</div>
+								<div class="mission__text">
+									<h4 class="mission__name">Experienced Specialists</h4>
+									<p class="mission__explain">Our team comprises industry veterans with years of expertise in delivering advanced cooling solutions.</p>
+								</div>
+							</li>
+							<li class="mission__item">
+								<div class="mission__img">
+									<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_2003_743)">
+										<path d="M24 0C10.7091 0 0 10.7091 0 24C0 37.2909 10.7091 48 24 48C37.2909 48 48 37.2909 48 24C48 10.7091 37.2909 0 24 0ZM36.9231 24.7356C36.9231 25.4784 36.7356 26.0337 36.5553 26.7692L34.1538 33.7861C33.5986 35.6322 31.7524 36.9231 29.726 36.9231H18.4615C14.4014 36.9231 11.0769 33.5986 11.0769 29.5385V21.4183C11.0769 19.5721 12 17.9063 13.4784 16.8029L25.6587 7.57212C25.6587 7.57212 28.2476 8.12019 28.2476 10.5216C28.2476 11.4447 24.9231 16.6154 24.9231 16.6154H33.2308C35.2644 16.6154 36.9231 18.274 36.9231 20.3077V24.7356Z" fill="#2DA7DF"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_2003_743">
+										<rect width="48" height="48" fill="white"/>
+										</clipPath>
+										</defs>
+										</svg>
+																		</div>
+								<div class="mission__text">
+									<h4 class="mission__name">High-Quality Products</h4>
+									<p class="mission__explain">We offer a selection of top-tier AC units and systems designed for efficiency and durability.</p>
+								</div>
+							</li>
+							<li class="mission__item">
+								<div class="mission__img">
+									<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M46.7524 18.714C46.5433 18.0505 45.9592 17.5601 45.2669 17.4592L31.7164 15.4904L25.6515 3.20917C25.0313 1.95436 22.9688 1.95436 22.3414 3.20917L16.2837 15.4904L2.7332 17.4592C2.0409 17.5601 1.45676 18.0433 1.24042 18.714C1.02407 19.3847 1.20436 20.1202 1.70917 20.6034L11.5169 30.1659L9.20195 43.6587C9.08657 44.351 9.36782 45.0577 9.93753 45.4688C10.5072 45.8798 11.2572 45.9375 11.8774 45.6058L24 39.238L36.1154 45.6058C36.3895 45.75 36.6851 45.8149 36.9808 45.8149C37.363 45.8149 37.738 45.6996 38.0625 45.4688C38.6322 45.0505 38.9135 44.351 38.7981 43.6587L36.4832 30.1659L46.2909 20.6034C46.7957 20.113 46.9688 19.3847 46.7524 18.714Z" fill="#2DA7DF"/>
+										</svg>
+																		</div>
+								<div class="mission__text">
+									<h4 class="mission__name">Exceptional Service</h4>
+									<p class="mission__explain">Dedicated to excellence, our service ensures customer satisfaction with personalized support.</p>
+								</div>
+							</li>
+							<li class="mission__item">
+								<div class="mission__img">
+									<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_2003_749)">
+										<path d="M24 0C20.0986 0 16.7452 2.4375 15.4038 5.88462C15.0433 6.51202 15.0865 7.29808 15.512 7.88221C15.9375 8.46635 16.6659 8.75481 17.3726 8.61058C18.0865 8.46635 18.649 7.91827 18.8077 7.21154C19.6082 5.14904 21.6346 3.69231 24 3.69231C27.0793 3.69231 29.5385 6.15144 29.5385 9.23077C29.5385 12.3101 27.0793 14.7692 24 14.7692H0V18.4615H24C29.0769 18.4615 33.2308 14.3077 33.2308 9.23077C33.2308 4.15385 29.0769 0 24 0ZM0 22.1538V25.8462H36.9231C41.0192 25.8462 44.3077 29.1346 44.3077 33.2308C44.3077 37.3269 41.0337 40.4856 36.8654 40.6154C33.7212 40.7091 31.262 38.9062 30.1154 35.7692C29.9135 35.113 29.3726 34.6226 28.7019 34.4928C28.024 34.363 27.3389 34.6154 26.9135 35.149C26.4808 35.6827 26.3798 36.4111 26.6538 37.0385C28.262 41.4519 32.2572 44.4519 36.9808 44.3077C43.0024 44.1274 48 39.3245 48 33.2308C48 27.137 43.0168 22.1538 36.9231 22.1538H0ZM0 29.5385V33.2308H12.9231C16.0024 33.2308 18.4615 35.6899 18.4615 38.7692C18.4615 41.8486 16.0024 44.3077 12.9231 44.3077C10.774 44.3077 8.94231 43.0745 8.01923 41.3077C7.54327 40.399 6.41827 40.0529 5.50962 40.5288C4.60096 41.0048 4.25481 42.1298 4.73077 43.0385C6.27404 45.9808 9.38221 48 12.9231 48C18 48 22.1538 43.8462 22.1538 38.7692C22.1538 33.6923 18 29.5385 12.9231 29.5385H0Z" fill="#2DA7DF"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_2003_749">
+										<rect width="48" height="48" fill="white"/>
+										</clipPath>
+										</defs>
+										</svg>
+																		</div>
+								<div class="mission__text">
+									<h4 class="mission__name">Innovative Solutions</h4>
+									<p class="mission__explain">Leading the market with cutting-edge technology for optimal performance and energy savings.</p>
+								</div>
+							</li>
+							<li class="mission__item">
+								<div class="mission__img">
+									<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_2003_751)">
+										<path d="M32.827 0.346191L30.0578 1.50004L30.8078 4.96158C30.1155 5.46638 29.5457 6.101 29.0193 6.80773L25.5001 6.00004L24.3462 8.76927L27.3462 10.6731C27.2092 11.5385 27.2236 12.4111 27.3462 13.2693L24.3462 15.1731L25.4424 17.9423L28.9616 17.1923C29.4664 17.8774 30.101 18.4544 30.8078 18.9808L29.9424 22.5L32.7116 23.6539L34.6732 20.5962C35.5385 20.726 36.4256 20.726 37.2693 20.5962L39.1732 23.6539L41.9424 22.5577L41.1347 19.0385C41.8198 18.5337 42.4039 17.8919 42.9232 17.1923L46.5001 18L47.6539 15.2308L44.5962 13.327C44.726 12.4616 44.7188 11.6322 44.5962 10.7885L47.6539 8.82696L46.5001 6.05773L42.9808 6.86542C42.4832 6.17311 41.8919 5.54571 41.1924 5.01927L42.0001 1.55773L39.2308 0.403884L37.327 3.40388C36.4616 3.26686 35.5818 3.28129 34.7308 3.40388L32.827 0.346191ZM36.0001 7.84619C36.5409 7.84619 37.0818 7.96879 37.6155 8.19235C39.7429 9.08658 40.7525 11.488 39.8655 13.6154C38.9784 15.7428 36.5121 16.7524 34.3847 15.8654C32.2573 14.9784 31.2477 12.5193 32.1347 10.3847C32.8054 8.7909 34.3703 7.8534 36.0001 7.84619ZM13.6155 16.7308L12.8655 21.3462C11.7477 21.6202 10.7092 22.0457 9.75008 22.6154L5.94238 19.9039L3.17315 22.6731L5.827 26.4808C5.25008 27.4399 4.83902 28.5361 4.55777 29.6539L-0.0576172 30.4039V34.327L4.55777 35.1347C4.83181 36.2524 5.24286 37.2909 5.827 38.25L3.11546 42.0577L5.88469 44.827L9.75008 42.1731C10.7092 42.75 11.7549 43.1683 12.8655 43.4423L13.6155 48.0577H17.5385L18.3462 43.4423C19.4568 43.1611 20.5097 42.6923 21.4616 42.1154L25.327 44.827L28.0962 42.0577L25.327 38.25C25.8967 37.2981 26.3222 36.2452 26.5962 35.1347L31.2693 34.327V30.4039L26.5962 29.6539C26.3222 28.5505 25.8967 27.4904 25.327 26.5385L28.0385 22.6731L25.2693 19.9039L21.4616 22.6731C20.5025 22.0962 19.4568 21.6202 18.3462 21.3462L17.5385 16.7308H13.6155ZM15.6347 26.9423C18.6563 26.9423 21.0578 29.3438 21.0578 32.3654C21.0578 35.3871 18.6563 37.8462 15.6347 37.8462C12.6131 37.8462 10.1539 35.3871 10.1539 32.3654C10.1539 29.3438 12.6131 26.9423 15.6347 26.9423Z" fill="#2DA7DF"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_2003_751">
+										<rect width="48" height="48" fill="white"/>
+										</clipPath>
+										</defs>
+										</svg>
+																		</div>
+								<div class="mission__text">
+									<h4 class="mission__name">Customized Systems</h4>
+									<p class="mission__explain">Tailored cooling solutions to meet the unique needs of each client, ensuring optimal results.</p>
+								</div>
+							</li>
+							<li class="mission__item">
+								<div class="mission__img">
+									<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_2003_753)">
+										<path d="M2.42308 0L0 2.42308L4.26923 9.80769L7.03846 9.40385L23.9423 26.3077L22.5 27.6923C21.7644 28.4279 21.7644 29.5529 22.5 30.2885L23.25 31.0385C23.9856 31.774 25.1178 31.774 25.6731 31.0385L27.8654 33.2308C27.6779 34.3413 27.8654 35.6538 28.7885 36.5769L38.7692 46.5C40.8029 48.5337 44.1202 48.5337 46.1538 46.5C48.5553 44.2861 48.5337 40.976 46.5 38.9423L36.5769 28.9615C35.6538 28.0385 34.3413 27.6707 33.2308 28.0385L30.8077 25.8462C31.363 25.1106 31.363 23.9784 30.8077 23.4231L30.1154 22.7308C29.3798 21.9952 28.2548 21.9952 27.5192 22.7308L26.3077 23.9423L9.40385 7.03846L9.80769 4.26923L2.42308 0ZM38.4231 0.0576923C34.7812 -0.245193 29.9567 2.17067 27.6923 4.26923C24.9159 7.04567 25.363 10.6875 27.5769 14.1923L23.6538 18.1154L26.4231 21.2308C27.9014 19.9399 30.0793 19.9399 31.5577 21.2308L32.4808 22.1538L34.0962 20.5385C37.4351 22.5 40.9111 22.7812 43.5577 20.1346C46.1394 17.7332 48.9447 11.8125 47.6538 8.30769L42.4615 13.6731C41.726 14.4087 40.601 14.4087 39.8654 13.6731L34.5 8.30769C33.7644 7.57212 33.7644 6.44712 34.5 5.71154L39.8654 0.346154C39.4038 0.187501 38.9423 0.100962 38.4231 0.0576923ZM18.1154 23.0769L11.4231 29.7692C10.7308 29.6034 9.98077 29.5385 9.23077 29.5385C4.0601 29.5385 0 33.5986 0 38.7692C0 43.9399 4.0601 48 9.23077 48C14.4014 48 18.4615 43.9399 18.4615 38.7692C18.4615 37.8245 18.3101 36.9087 18.0577 36.0577L21.9808 32.1346L21.4038 31.3846C19.9255 29.9062 19.9399 27.6707 21.2308 26.1923L18.1154 23.0769ZM32.4231 31.5C32.6538 31.5 32.8702 31.5433 33.0577 31.7308L43.9615 42.6346C44.3293 43.0024 44.3293 43.5938 43.9615 43.9615C43.5938 44.3293 43.0024 44.3293 42.6346 43.9615L31.7308 33.0577C31.363 32.6899 31.363 32.0986 31.7308 31.7308C31.9183 31.5433 32.1923 31.5 32.4231 31.5ZM10.5 33.9808L14.0192 37.5L12.75 42.2885L7.96154 43.5577L4.44231 40.0385L5.71154 35.25L10.5 33.9808Z" fill="#2DA7DF"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_2003_753">
+										<rect width="48" height="48" fill="white"/>
+										</clipPath>
+										</defs>
+										</svg>
+																		</div>
+								<div class="mission__text">
+									<h4 class="mission__name">Sustainable Practices</h4>
+									<p class="mission__explain">Committed to eco-friendly options, reducing environmental impact without compromising on quality.</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="reviews__container">
+					<div class="reviews__inner">
+						<h3 class="section-title">What our customers say</h3>
+						<ul class="reviews__list">
+							<li class="review__item">
+								<p class="review__text">The efficiency and reliability of their AC units are unmatched. Truly a game-changer for my home comfort.</p>
+								<div class="review__profile">
+									<img src="img/user.jpg" alt="" class="review__img">
+									<h5 class="review__user">Jane Smith</h5>
+								</div>
+							</li>
+							<li class="review__item">
+								<p class="review__text">Exceptional service from start to finish. Aero Cool Systems exceeded my expectations in every way!</p>
+								<div class="review__profile">
+									<img src="img/user.jpg" alt="" class="review__img">
+									<h5 class="review__user">Alex Johnson</h5>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="contacts">
+    <div class="contacts__container">
+        <div class="contacts__inner">
+            <h3 class="section-title">Contact Us</h3>
+            <form action="" class="contacts__form form">
+                <div class="form__inputs">
+                    <input required name="name" type="text" placeholder="Enter your name" class="contacts__input input">
+                    <input required name="email" type="text" placeholder="Enter your email address" class="contacts__input input">
+                    <textarea required name="review" placeholder="Your message..."></textarea>
+                </div>
+                <button class="button button_medium button_blue form__button">send message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+			<footer class="footer">
+	<div class="footer__container">
+		<div class="footer__inner">
+			<div class="footer__top">
+				<div class="footer__logo">
+					<a href="#">
+						<svg class="icon" width="48px" height="48px"><use xlink:href="#logo"></use></svg>
+						<span>Aerocoolsystems</span>
+					</a>
+					</div>
+				<nav class="footer__menu menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+						<li class="menu__item"><a href="aboutus.html" class="menu__link">About us</a></li>
+						<li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
+						<li class="menu__item"><a href="products.html" class="menu__link">Products</a></li>
+						<li class="menu__item"><a href="faq.html" class="menu__link">FAQs</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Contact Us</a></li>
+					</ul>
+				</nav>
+				<ul class="menu__buttons">
+					<li class="button button_small menu__button">Sign Up</li>
+					<li class="button button_small button_blue menu__button">request service</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="copyrights">
+	<div class="copyrights__container">
+		<div class="copyrights__inner">
+			<p class="copyrights__copyright">Aero Cool Systems © 2024. All Rights Reserved</p>
+			<div class="copyrights__rules">
+				<a href="privacy-policy.html">Privacy Policy</a>
+				<a href="terms-of-use.html">Terms of Use</a>
+			</div>
+		</div>
+	</div>
+</div>
+</div> 
+<script src="js/app.min.js"></script>
+
+		</div>
+	</body>
+</html>
