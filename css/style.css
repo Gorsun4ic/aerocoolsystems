@@ -151,8 +151,8 @@ h6 {
 }
 
 .accordion__item.active .accordion__label .accordion__button {
-  -webkit-transform: rotateX(-180deg);
-          transform: rotateX(-180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 .accordion__item.active .accordion__content {
@@ -184,6 +184,11 @@ h6 {
 .accordion__title {
   font-size: 18px;
   letter-spacing: 0.02em;
+}
+
+.accordion__button {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
 }
 
 .accordion__content {
@@ -669,6 +674,8 @@ textarea {
 
 textarea {
   min-height: 156px;
+  max-width: 100%;
+  resize: none;
 }
 
 .form__button {

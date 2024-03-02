@@ -11,8 +11,6 @@
         color: #fff;
     }
 }
-.contacts__form {
-}
 .form {
     background-color: #fff;
     max-width: 800px;
@@ -41,6 +39,8 @@
 }
 textarea {
     min-height: 156px;
+    max-width: 100%;
+    resize: none;
 }
 .form__button {
     padding-top: 10px;

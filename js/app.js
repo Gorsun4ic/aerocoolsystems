@@ -1,12 +1,12 @@
 (() => {
   // src/js/files/functions.js
   function burger() {
-    const burger2 = document.querySelector(".burger");
-    if (burger2) {
+    const burger = document.querySelector(".burger");
+    if (burger) {
       const menu = document.querySelector(".menu");
-      burger2.addEventListener("click", function() {
+      burger.addEventListener("click", function() {
         document.body.classList.toggle("_lock");
-        burger2.classList.toggle("_active");
+        burger.classList.toggle("_active");
         menu.classList.toggle("_active");
         document.documentElement.classList.toggle("menu-open");
       });
