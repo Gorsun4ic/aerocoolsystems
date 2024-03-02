@@ -175,6 +175,9 @@
 // Products section
 .products {
     padding: 86px 0;
+    .button {
+        margin-top: 48px;
+    }
     @media (max-width: $tablet){
         padding: 60px 0;
     }

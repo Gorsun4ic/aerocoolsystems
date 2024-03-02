@@ -787,6 +787,10 @@ textarea {
   padding: 86px 0;
 }
 
+.products .button {
+  margin-top: 48px;
+}
+
 .products__inner > button {
   display: block;
   margin-right: auto;
@@ -1492,7 +1496,6 @@ textarea {
 }
 
 .intro_products {
-  background-image: url("../img/productsbackground.jpg");
   padding: 313px 0 188px;
 }
 
