@@ -4,7 +4,7 @@
     const burger2 = document.querySelector(".burger");
     if (burger2) {
       const menu = document.querySelector(".menu");
-      burger2.addEventListener("click", function(e) {
+      burger2.addEventListener("click", function() {
         document.body.classList.toggle("_lock");
         burger2.classList.toggle("_active");
         menu.classList.toggle("_active");

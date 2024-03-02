@@ -1,0 +1,172 @@
+h1 {
+    font-size: 56px;
+    line-height:1.2;
+    margin-bottom: 24px;
+    @media (max-width: 1200px){
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 18px;
+    }
+    @media (max-width: $tablet){
+        font-size: 36px;
+        line-height: 36px;
+    }
+    @media (max-width: $mobileSmall){
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+    span {
+        color: $lightBlue;
+    }
+}
+@if h1 + p + button {
+    p {
+        margin-bottom: 32px;
+        @media (max-width: 1200px){
+            margin-bottom: 24px;
+        }
+        @media (max-width: $tablet){
+            margin-bottom: 18px;
+        }
+    }
+}
+h2 {
+    font-size: 48px;
+    margin-bottom: 24px;
+    line-height: 1.2;
+    @media (max-width: 1200px){
+        font-size: 36px;
+        margin-bottom: 18px;
+        line-height: 1.2;
+    }
+    @media (max-width: $tablet){
+        font-size: 28px;
+        margin-bottom: 14px;
+    }
+    @media (max-width: $mobile){
+        font-size: 24px;
+    }
+    & + p {
+        margin-bottom: 24px;
+        font-size: 20px;
+        line-height: 32px;
+        @media (max-width: 1200px){
+            margin-bottom: 18px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        @media (max-width: $tablet){
+            font-size: 14px;
+            margin-bottom: 16px;
+            line-height: 1.4;
+        }
+    }
+}
+h3 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.2;
+    @media (max-width: $tablet){
+        font-size: 24px;
+    }
+}
+@mixin h4($align: center) {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: $align;
+    @media (max-width: $tablet){
+        font-size: 18px;
+    }
+}
+h4 {
+    font-size: 24px;
+    line-height: 1.2;
+    @media (max-width: $tablet){
+        font-size: 18px;
+    }
+}
+.button {
+    border-radius: 8px;
+    transition: .3s all;
+    border: 1px solid $lightBlue;
+    text-transform: capitalize;
+    letter-spacing: 0.06em;
+    
+    // Sides paddings - 32px
+    &_large{
+        padding-left: 32px;
+        padding-right: 32px;
+        @media (max-width: $tablet){
+            padding: 10px 18px;
+        }
+        @media (max-width: $mobileSmall){
+            padding: 10px 16px;
+            font-size: 14px;
+        }
+    }
+    // Sides paddings - 24px
+    &_medium{
+        padding-left: 24px;
+        padding-right: 24px;
+        @media (max-width: $tablet){
+            padding: 10px 18px;
+        }
+        @media (max-width: $mobileSmall){
+            padding: 10px 16px;
+            font-size: 14px;
+        }
+    }
+    // Sides paddings - 16px
+    // Vertical paddings - 11px
+    &_small{
+        padding: 11px 16px;
+    }
+
+    &_large, &_medium {
+        padding-top: 19px;
+        padding-bottom: 19px;
+    }
+    &:not(&_blue){
+        background-color: #fff;
+        color: $blue;
+        &:hover {
+            background-color: $lightBlue;
+            color: #fff;
+        }
+    }
+    &_blue {
+        background-color: $lightBlue;
+        color: #fff;
+        &:hover {
+            color: $blue;
+            background-color: #fff;
+        }
+    }
+}
+.section-title {
+    margin-bottom: 48px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    @media (max-width: $tablet){
+        font-size: 24px;
+    }
+    &_blue {
+        color: $lightBlue;
+    }
+    @media (max-width: $tablet){
+        margin-bottom: 36px;
+    }
+    @media (max-width: $mobile){
+        margin-bottom: 28px;
+    }
+}
+.p52 {
+    padding: 50px 16px 30px !important;
+}
+.p13 {
+    padding: 13px 16px !important;
+}

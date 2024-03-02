@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Products</title>
+    <script src="js/app.min.js" defer></script>
 </head>
 	<body>
 		<div class="wrapper">
@@ -26,20 +27,18 @@
 <header class="header">
     <div class="header__container">
         <div class="header__inner">
-            <div class="header__logo">
-                <a href="index.html">
+                <a href="index.html" class="header__logo">
                     <svg class="icon" width="48px" height="48px"><use xlink:href="#logo"></use></svg>
                     <span>Aerocoolsystems</span>
                 </a>
-                </div>
-            <nav class="header__menu menu">
+            <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
                     <li class="menu__item"><a href="aboutus.html" class="menu__link">About us</a></li>
                     <li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
-                    <li class="menu__item"><a href="products.html" class="menu__link _active">Products</a></li>
+                    <li class="menu__item"><a href="products.html" class="menu__link">Products</a></li>
                     <li class="menu__item"><a href="faq.html" class="menu__link">FAQs</a></li>
-                    <li class="menu__item"><a href="#" class="menu__link">Contact Us</a></li>
+                    <li class="menu__item"><a href="#contacts" class="menu__link" data-scroll>Contact Us</a></li>
                 </ul>
             </nav>
             <ul class="menu__buttons">
@@ -108,7 +107,7 @@
 				<div class="products__container">
 					<div class="products__inner">
 						<h3 class="section-title">Categories of Products</h3>
-						<ul class="products__list">
+						<ul class="products__list triple">
 							<li class="products__item">
 								<div class="products__img">
 									<img src="img/products/7.jpg" alt="">
@@ -144,7 +143,7 @@
 				<div class="products__container">
 					<div class="products__inner">
 						<h3 class="section-title">Accessories and Add-Ons</h3>
-						<ul class="products__list">
+						<ul class="products__list triple">
 							<li class="products__item">
 								<div class="products__img">
 									<img src="img/products/10.jpg" alt="">
@@ -176,7 +175,7 @@
 					</div>
 				</div>
 			</section>
-            <section class="contacts">
+            <section class="contacts" id="contacts">
     <div class="contacts__container">
         <div class="contacts__inner">
             <h3 class="section-title">Contact Us</h3>
@@ -186,7 +185,7 @@
                     <input required name="email" type="text" placeholder="Enter your email address" class="contacts__input input">
                     <textarea required name="review" placeholder="Your message..."></textarea>
                 </div>
-                <button class="button button_medium button_blue form__button">send message</button>
+                <button class="button button_medium button_blue form__button">Send message</button>
             </form>
         </div>
     </div>
@@ -232,7 +231,6 @@
 	</div>
 </div>
 </div> 
-<script src="js/app.min.js"></script>
 
 		</div>
 	</body>

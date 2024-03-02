@@ -1,56 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
-    <title>Home page</title>
-    <script src="js/app.min.js" defer></script>
-</head>
+	@@include('html/head.html', { "title": "Home page" })
 	<body>
 		<div class="wrapper">
-			<svg style="display: none;">
-    <symbol id="logo" viewBox="0 0 48 48">
-        <g clip-path="url(#clip0_2001_270)">
-            <path d="M7.0827 29.0642C6.52441 30.1961 7.16155 31.5534 8.38852 31.8466C9.32688 32.0704 10.2936 31.5849 10.6595 30.6926C12.6135 25.9413 16.8338 22.6498 21.6723 21.7355C15.6904 20.6367 9.73219 23.6855 7.0827 29.0642Z" fill="#2DA7DF"/>
-            <path d="M12.0712 39.5268C12.3393 40.8542 13.7681 41.5903 15.003 41.037C15.9461 40.6145 16.4507 39.5678 16.1779 38.5699C14.7254 33.2543 16.159 27.6959 19.6695 23.7533C13.8675 26.7343 10.8016 33.2228 12.0712 39.5268Z" fill="#2DA7DF"/>
-            <path d="M7.26573 17.8969C6.10026 18.3967 5.69811 19.8485 6.44407 20.8748C7.01339 21.6582 8.07004 21.9184 8.9327 21.4785C13.5299 19.1265 18.903 19.3725 23.1942 21.8332C19.3462 17.0882 12.806 15.5229 7.26573 17.8985V17.8969Z" fill="#2DA7DF"/>
-            <path d="M41.3701 30.256C40.8228 29.2329 39.6116 28.7521 38.5156 29.1351C32.6772 31.1766 26.3421 30.0101 21.6519 26.3922C25.4447 32.649 32.9501 35.57 39.9081 33.6531C41.3732 33.2496 42.0861 31.5928 41.3685 30.2544L41.3701 30.256Z" fill="#2DA7DF"/>
-            <path d="M22.6154 43.5104C23.6264 44.4105 25.2113 44.1425 25.8674 42.9587C26.3673 42.0538 26.1418 40.9156 25.3249 40.2803C20.9706 36.9005 18.7768 31.5959 19.2168 26.3354C16.3671 32.2013 17.8132 39.2305 22.6154 43.5088V43.5104Z" fill="#2DA7DF"/>
-            <path d="M16.1824 11.0427C15.0469 10.6376 13.8294 11.3895 13.6843 12.586C13.5739 13.5003 14.1417 14.3642 15.028 14.6133C19.7514 15.9454 23.3345 19.5884 24.7334 24.0749C25.1213 18.2832 21.576 12.9675 16.1824 11.0443V11.0427Z" fill="#2DA7DF"/>
-            <path d="M34.7557 38.242C34.7557 37.1732 33.9782 36.2573 32.9232 36.095C27.293 35.2232 22.6501 31.5297 20.4075 26.5577C20.7749 33.2858 25.6087 38.9136 32.0952 40.3718C33.461 40.6792 34.7589 39.6419 34.7557 38.2436V38.242Z" fill="#2DA7DF"/>
-            <path d="M34.5964 2.46235C25.544 -1.99258 14.2678 -0.401984 6.80667 7.23728C-2.35932 16.6216 -2.25208 31.7394 7.04007 40.9992C16.419 50.3441 31.5999 50.3347 40.9678 40.9708C48.9289 33.0131 50.1291 20.859 44.5714 11.6339C44.092 10.8378 42.9029 10.934 42.5638 11.7978C42.5606 11.8073 42.5575 11.8152 42.5543 11.8246C42.4266 12.1525 42.455 12.5182 42.6363 12.8193C43.4123 14.1073 44.0604 15.4835 44.5604 16.929C44.4074 16.8092 44.2387 16.702 44.0541 16.6137C42.8603 16.0415 41.4204 16.4135 40.6697 17.5044C36.6687 23.3182 30.0465 26.512 23.2856 26.3402C30.9991 29.5482 39.8812 27.182 44.9988 20.7297C45.8599 19.6452 45.7385 18.1476 44.8569 17.2049C44.8569 17.2049 47.7477 19.601 45.729 22.9919C45.7432 23.2662 45.7527 23.5421 45.7558 23.8195C45.9025 35.8964 36.2271 45.8056 24.1451 45.9522C12.0631 46.0989 2.14955 36.4276 2.00288 24.3508C1.85937 12.2739 11.5348 2.36461 23.6168 2.218C27.2015 2.17386 30.5938 2.99517 33.5981 4.48803C34.3283 4.8506 35.191 4.35088 35.2335 3.53746C35.2572 3.08503 35.0049 2.66413 34.598 2.46392L34.5964 2.46235Z" fill="#2DA7DF"/>
-            <path d="M35.0427 8.13111V8.14056C34.3771 15.1398 30.5811 21.3981 24.9131 25.2714C33.0603 23.3576 39.1809 16.888 40.881 8.9934C41.1097 7.9309 40.7154 6.83057 39.8764 6.1401C39.8559 6.12276 39.8354 6.10542 39.8133 6.08966C37.9981 4.59995 35.2477 5.75388 35.0474 8.0917C35.0474 8.10588 35.0458 8.11849 35.0442 8.13111H35.0427Z" fill="#2DA7DF"/>
-            </g>
-    </symbol>
-</svg>
-<header class="header">
-    <div class="header__container">
-        <div class="header__inner">
-                <a href="index.html" class="header__logo">
-                    <svg class="icon" width="48px" height="48px"><use xlink:href="#logo"></use></svg>
-                    <span>Aerocoolsystems</span>
-                </a>
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
-                    <li class="menu__item"><a href="aboutus.html" class="menu__link">About us</a></li>
-                    <li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
-                    <li class="menu__item"><a href="products.html" class="menu__link">Products</a></li>
-                    <li class="menu__item"><a href="faq.html" class="menu__link">FAQs</a></li>
-                    <li class="menu__item"><a href="#contacts" class="menu__link" data-scroll>Contact Us</a></li>
-                </ul>
-            </nav>
-            <ul class="menu__buttons">
-                <li class="button button_small menu__button">Sign Up</li>
-                <li class="button button_small button_blue menu__button">request service</li>
-            </ul>
-            <button class="burger">
-                <span></span>
-            </button>
-        </div>
-    </div>
-</header>
+			@@include('html/header.html')
 			<section class="intro" style="background-image: url(/img/homebackground.jpg);">
 				<div class="intro__container">
 					<div class="intro__inner">
@@ -73,7 +26,7 @@
 							<button class="button button_large">Learn More</button>
 						</div>
 						<div class="aerosky__img">
-							<img src="img/aerosky.jpg" alt="" width="598px">
+							<img src="@img/aerosky.jpg" alt="" width="598px">
 						</div>
 					</div>
 				</div>
@@ -85,7 +38,7 @@
 						<ul class="services__list">
 							<li class="services__item">
 								<div class="services__img">
-									<img src="img/services/1.jpg" alt="">
+									<img src="@img/services/1.jpg" alt="">
 								</div>
 								<div class="services__text">
 									<h3 class="services__name">Installation</h3>
@@ -95,7 +48,7 @@
 							</li>
 							<li class="services__item">
 								<div class="services__img">
-									<img src="img/services/2.jpg" alt="">
+									<img src="@img/services/2.jpg" alt="">
 								</div>
 								<div class="services__text">
 									<h3 class="services__name">Replacement</h3>
@@ -105,7 +58,7 @@
 							</li>
 							<li class="services__item">
 								<div class="services__img">
-									<img src="img/services/3.jpg" alt="">
+									<img src="@img/services/3.jpg" alt="">
 								</div>
 								<div class="services__text">
 									<h3 class="services__name">Repair</h3>
@@ -115,7 +68,7 @@
 							</li>
 							<li class="services__item">
 								<div class="services__img">
-									<img src="img/services/4.jpg" alt="">
+									<img src="@img/services/4.jpg" alt="">
 								</div>
 								<div class="services__text">
 									<h3 class="services__name">Maintenance</h3>
@@ -135,7 +88,7 @@
 						<ul class="products__list">
 							<li class="products__item">
 								<div class="products__img">
-									<img src="img/products/1.jpg" alt="">
+									<img src="@img/products/1.jpg" alt="">
 								</div>
 								<div class="products__text">
 									<h3 class="products__name">Carrier</h3>
@@ -144,7 +97,7 @@
 							</li>
 							<li class="products__item">
 								<div class="products__img">
-									<img src="img/products/2.jpg" alt="">
+									<img src="@img/products/2.jpg" alt="">
 								</div>
 								<div class="products__text">
 									<h3 class="products__name">Lennox</h3>
@@ -153,7 +106,7 @@
 							</li>
 							<li class="products__item">
 								<div class="products__img">
-									<img src="img/products/3.jpg" alt="">
+									<img src="@img/products/3.jpg" alt="">
 								</div>
 								<div class="products__text">
 									<h3 class="products__name">Trane</h3>
@@ -162,7 +115,7 @@
 							</li>
 							<li class="products__item">
 								<div class="products__img">
-									<img src="img/products/4.jpg" alt="">
+									<img src="@img/products/4.jpg" alt="">
 								</div>
 								<div class="products__text">
 									<h3 class="products__name">Amana</h3>
@@ -257,14 +210,14 @@
 							<li class="review__item">
 								<p class="review__text">The efficiency and reliability of their AC units are unmatched. Truly a game-changer for my home comfort.</p>
 								<div class="review__profile">
-									<img src="img/user.jpg" alt="" class="review__img">
+									<img src="@img/user.jpg" alt="" class="review__img">
 									<p class="review__user">Jane Smith</p>
 								</div>
 							</li>
 							<li class="review__item">
 								<p class="review__text">Exceptional service from start to finish. Aero Cool Systems exceeded my expectations in every way!</p>
 								<div class="review__profile">
-									<img src="img/user.jpg" alt="" class="review__img">
+									<img src="@img/user.jpg" alt="" class="review__img">
 									<p class="review__user">Alex Johnson</p>
 								</div>
 							</li>
@@ -272,63 +225,8 @@
 					</div>
 				</div>
 			</section>
-			<section class="contacts" id="contacts">
-    <div class="contacts__container">
-        <div class="contacts__inner">
-            <h3 class="section-title">Contact Us</h3>
-            <form action="" class="contacts__form form">
-                <div class="form__inputs">
-                    <input required name="name" type="text" placeholder="Enter your name" class="contacts__input input">
-                    <input required name="email" type="text" placeholder="Enter your email address" class="contacts__input input">
-                    <textarea required name="review" placeholder="Your message..."></textarea>
-                </div>
-                <button class="button button_medium button_blue form__button">Send message</button>
-            </form>
-        </div>
-    </div>
-</section>
-
-			<footer class="footer">
-	<div class="footer__container">
-		<div class="footer__inner">
-			<div class="footer__top">
-				<div class="footer__logo">
-					<a href="#">
-						<svg class="icon" width="48px" height="48px"><use xlink:href="#logo"></use></svg>
-						<span>Aerocoolsystems</span>
-					</a>
-					</div>
-				<nav class="footer__menu menu">
-					<ul class="menu__list">
-						<li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
-						<li class="menu__item"><a href="aboutus.html" class="menu__link">About us</a></li>
-						<li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
-						<li class="menu__item"><a href="products.html" class="menu__link">Products</a></li>
-						<li class="menu__item"><a href="faq.html" class="menu__link">FAQs</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Contact Us</a></li>
-					</ul>
-				</nav>
-				<ul class="menu__buttons">
-					<li class="button button_small menu__button">Sign Up</li>
-					<li class="button button_small button_blue menu__button">request service</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</footer>
-<div class="copyrights">
-	<div class="copyrights__container">
-		<div class="copyrights__inner">
-			<p class="copyrights__copyright">Aero Cool Systems © 2024. All Rights Reserved</p>
-			<div class="copyrights__rules">
-				<a href="privacy-policy.html">Privacy Policy</a>
-				<a href="terms-of-use.html">Terms of Use</a>
-			</div>
-		</div>
-	</div>
-</div>
-</div> 
-
+			@@include('html/contacts.html')
+			@@include('html/footer.html')
 		</div>
 	</body>
 </html>

@@ -1,0 +1,132 @@
+@use "sass:math";
+
+// Import mixins
+@import "base/mixins";
+
+// Import fonts from google fonts
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Inter:300,regular,500,600);
+
+// Set general font
+$fontFamily: "Inter";
+// Set general font size
+$fontSize: 16px;
+// Set general colors
+$mainColor: #073e57; // default text color
+$blue: #0b6791;
+$lightBlue: #2da7df;
+$extraLightBlue: #e7f6fd;
+// Min page width
+$minWidth: 320;
+// Template width
+$maxWidth: 1440;
+// The width of the restrictive container (0 = no restriction)
+$maxWidthContainer: 1216;
+// General container padding
+// (30 = 15px left and right, 0 = absence of backwardness)
+$containerPadding: 30;
+// ширина першої Breikpointa
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// Breakpoints
+$pc: em($containerWidth); // PC, Laptops
+$tablet: em(991.98); // Tablets
+$mobile: em(767.98); // Large size phones
+$mobileSmall: em(479.98); // Small size phone
+
+// Responsive types:
+// 1 = responsive (without breakpoints),
+// 2 = breakpoints
+$responsiveType: 1;
+
+html {
+	scroll-behavior: smooth;
+}
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+    // Footer to bottom
+	> main {
+		flex: 1 1 auto;
+	}
+	// Fix to sliders
+	> * {
+		min-width: 0;
+	}
+}
+
+
+body {
+	// Scroll blocked
+	&._lock {
+		overflow: hidden;
+		touch-action: none;
+	}
+	// Page loaded
+	.loaded & {
+	}
+}
+
+@if ($responsiveType==1) {
+	// Responsive
+	[class*="__container"] {
+		@if ($maxWidthContainer>0) {
+			max-width: rem($maxWidthContainer);
+			box-sizing: content-box;
+			margin: 0 auto;
+		}
+		@if ($containerPadding>0) {
+			padding: 0 rem(math.div($containerPadding, 2));
+		}
+	}
+} @else {
+	// Breakpoints
+	[class*="__container"] {
+		margin: 0 auto;
+		@if ($maxWidthContainer>0) {
+			max-width: rem($maxWidthContainer);
+			box-sizing: content-box;
+		} @else {
+			@if ($containerPadding>0) {
+				padding: 0 rem(math.div($containerPadding, 2));
+			}
+		}
+		@media (max-width: $pc) {
+			max-width: rem(970);
+		}
+		@media (max-width: $tablet) {
+			max-width: rem(750);
+		}
+		@media (max-width: $mobile) {
+			max-width: none;
+			@if ($containerPadding>0 and $maxWidthContainer>0) {
+				padding: 0 rem(math.div($containerPadding, 2));
+			}
+		}
+	}
+}
+
+
+// Null
+@import "base/null";
+
+// Import components styles
+@import "base";
+
+// Import general project styles
+@import "common";
+
+// Import separates blocks styles
+@import "header";
+@import "footer";
+@import "contacts";
+
+// Import separate pages styles
+@import "index";
+@import "aboutus";
+@import "services";
+@import "products";
+@import "terms-of-use";
